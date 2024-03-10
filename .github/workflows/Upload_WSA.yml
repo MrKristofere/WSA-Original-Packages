@@ -25,7 +25,7 @@ jobs:
           echo "SHA-256=$(sha256sum dloa/*)"
           echo "SHA-1=$(sha1sum dloa/*)"
       - name: Upload Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: dloa/*
           tag_name: ${{ inputs.tag }}
